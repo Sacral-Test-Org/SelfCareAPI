@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\vgunturu\Downloads\OneDrive_1_9-7-2024\Selfcare.Infrastructure.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{76C57BDC-12B1-4177-9EE2-2413B47493C2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Selfcare.Infrastructure</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Selfcare.Infrastructure</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Services\IAccountService.cs" />
+    <Compile Include="Services\IAssetService.cs" />
+    <Compile Include="Services\ICaseService.cs" />
+    <Compile Include="Services\IFAQService.cs" />
+    <Compile Include="Services\ILoginService.cs" />
+    <Compile Include="Services\IMailService.cs" />
+    <Compile Include="Services\IMasterTableService.cs" />
+    <Compile Include="Services\IPaymentService.cs" />
+    <Compile Include="Services\IPointOfInterestService.cs" />
+    <Compile Include="Services\IUserService.cs" />
+    <Compile Include="Persistence\ISqlConnectionFactory.cs" />
+    <Compile Include="Persistence\Repositories\IPaymentOrdersRepository.cs" />
+    <Compile Include="Persistence\Repositories\IRefreshTokenRepository.cs" />
+    <Compile Include="Persistence\Repositories\IUserRepository.cs" />
+    <Compile Include="Persistence\Managers\IPaymentOrdersManager.cs" />
+    <Compile Include="Logging\ILogger.cs" />
+    <Compile Include="Logging\Logger.cs" />
+    <Compile Include="Logging\LoggerFactory.cs" />
+    <Compile Include="Enums\ApplicationClients.cs" />
+    <Compile Include="Enums\ExternalAPIType.cs" />
+    <Compile Include="Enums\ActionType.cs" />
+    <Compile Include="Enums\PaymentReturnUrl.cs" />
+    <Compile Include="Entities\TokenData.cs" />
+    <Compile Include="Entities\Users\UserRegistrationData.cs" />
+    <Compile Include="Entities\Users\UserRegistrationValidationData.cs" />
+    <Compile Include="Entities\Users\UserResetPasswordData.cs" />
+    <Compile Include="Entities\Users\UserViewData.cs" />
+    <Compile Include="Entities\PointOfInterest\PoiServiceViewData.cs" />
+    <Compile Include="Entities\PointOfInterest\PoiViewData.cs" />
+    <Compile Include="Entities\PointOfInterest\PoiCategoryViewData.cs" />
+    <Compile Include="Entities\Persistence\PaymentOrders.cs" />
+    <Compile Include="Entities\Persistence\RefreshToken.cs" />
+    <Compile Include="Entities\Persistence\User.cs" />
+    <Compile Include="Entities\Payment\PaymentOrderDetailsData.cs" />
+    <Compile Include="Entities\Payment\Chargeback.cs" />
+    <Compile Include="Entities\Payment\Customer.cs" />
+    <Compile Include="Entities\Payment\Device.cs" />
+    <Compile Include="Entities\Payment\Review.cs" />
+    <Compile Include="Entities\Payment\Rule.cs" />
+    <Compile Include="Entities\Payment\Response.cs" />
+    <Compile Include="Entities\Payment\Risk.cs" />
+    <Compile Include="Entities\Payment\Expiry.cs" />
+    <Compile Include="Entities\Payment\Card.cs" />
+    <Compile Include="Entities\Payment\Provided.cs" />
+    <Compile Include="Entities\Payment\SourceOfFunds.cs" />
+    <Compile Include="Entities\Payment\__invalid_type__3DSecure.cs" />
+    <Compile Include="Entities\Payment\AuthorizationResponse.cs" />
+    <Compile Include="Entities\Payment\Customer2.cs" />
+    <Compile Include="Entities\Payment\Device2.cs" />
+    <Compile Include="Entities\Payment\Chargeback2.cs" />
+    <Compile Include="Entities\Payment\Order.cs" />
+    <Compile Include="Entities\Payment\CardSecurityCode.cs" />
+    <Compile Include="Entities\Payment\Response2.cs" />
+    <Compile Include="Entities\Payment\Review2.cs" />
+    <Compile Include="Entities\Payment\Rule2.cs" />
+    <Compile Include="Entities\Payment\Response3.cs" />
+    <Compile Include="Entities\Payment\Risk2.cs" />
+    <Compile Include="Entities\Payment\Expiry2.cs" />
+    <Compile Include="Entities\Payment\Card2.cs" />
+    <Compile Include="Entities\Payment\Provided2.cs" />
+    <Compile Include="Entities\Payment\SourceOfFunds2.cs" />
+    <Compile Include="Entities\Payment\Acquirer.cs" />
+    <Compile Include="Entities\Payment\Transaction2.cs" />
+    <Compile Include="Entities\Payment\Transaction.cs" />
+    <Compile Include="Entities\Payment\PaymentDetailsData.cs" />
+    <Compile Include="Entities\Payment\PaymentOrdersViewData.cs" />
+    <Compile Include="Entities\Payment\PaymentSessionData.cs" />
+    <Compile Include="Entities\Payment\PaymentViewData.cs" />
+    <Compile Include="Entities\MasterTable\MasterTableRootViewData.cs" />
+    <Compile Include="Entities\MasterTable\MasterTableViewData.cs" />
+    <Compile Include="Entities\MasterTable\PlateTypeViewData.cs" />
+    <Compile Include="Entities\MasterTable\PlateViewData.cs" />
+    <Compile Include="Entities\MailServer\MailServerResponse.cs" />
+    <Compile Include="Entities\FAQ\FAQCategoryViewData.cs" />
+    <Compile Include="Entities\FAQ\FAQViewData.cs" />
+    <Compile Include="Entities\Case\CaseCreateData.cs" />
+    <Compile Include="Entities\Case\CasesRetrieveParameters.cs" />
+    <Compile Include="Entities\Case\CaseViewData.cs" />
+    <Compile Include="Entities\Case\CreateCaseViewData.cs" />
+    <Compile Include="Entities\Assets\AssetsFilterParameters.cs" />
+    <Compile Include="Entities\Assets\AssetDetailsViewData.cs" />
+    <Compile Include="Entities\Assets\AssetsRetrieveParameters.cs" />
+    <Compile Include="Entities\Assets\AssetViewData.cs" />
+    <Compile Include="Entities\Assets\VehicleViewData.cs" />
+    <Compile Include="Entities\Accounts\AccountInfoRootViewData.cs" />
+    <Compile Include="Entities\Accounts\AccountInfoViewData.cs" />
+    <Compile Include="Entities\Accounts\AccountPageTransactionsViewData.cs" />
+    <Compile Include="Entities\Accounts\AccountTopUpRangeViewData.cs" />
+    <Compile Include="Entities\Accounts\AccountPageTransactionsRetrieveParameters.cs" />
+    <Compile Include="Entities\Accounts\AnonymousPaymentViewData.cs" />
+    <Compile Include="Entities\Accounts\DashboardRetrieveParameters.cs" />
+    <Compile Include="Entities\Accounts\DashboardViewData.cs" />
+    <Compile Include="Entities\Accounts\RetrieveFinancialDocumentsParametersEntity.cs" />
+    <Compile Include="Entities\Accounts\RetrieveFinancialDocumentsViewData.cs" />
+    <Compile Include="Entities\Accounts\AccountTransactionsRetrieveParameters.cs" />
+    <Compile Include="Entities\Accounts\AccountTransactionsViewData.cs" />
+    <Compile Include="Entities\Accounts\CustomerAccountData.cs" />
+    <Compile Include="Entities\Accounts\RegisterAccountTopupData.cs" />
+    <Compile Include="Entities\Accounts\AccountTopupViewData.cs" />
+    <Compile Include="Entities\Accounts\AccountViewData.cs" />
+    <Compile Include="Entities\Accounts\PrimaryContact.cs" />
+    <Compile Include="Entities\Accounts\AnonymousPaymentRegisterData.cs" />
+    <Compile Include="Entities\Accounts\AnonymousTransactionsRetrieveParameters.cs" />
+    <Compile Include="Entities\Accounts\AnonymousTransactionViewData.cs" />
+    <Compile Include="BackOffice\BackOfficeApiResult`1.cs" />
+    <Compile Include="BackOffice\IBackOfficeManager.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

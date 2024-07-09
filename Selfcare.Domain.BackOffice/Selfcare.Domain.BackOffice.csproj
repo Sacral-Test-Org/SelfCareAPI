@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\vgunturu\Downloads\OneDrive_1_9-7-2024\Selfcare.Domain.BackOffice.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CDDA40FD-70A9-466C-A5EE-B3CC1C3387C4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Selfcare.Domain.BackOffice</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Selfcare.Domain.BackOffice</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Selfcare.Infrastructure">
+      <HintPath>lib\Selfcare.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackOfficeManager.cs" />
+    <Compile Include="Registration\BackOfficeModule.cs" />
+    <Compile Include="Models\ErrorResponseModel.cs" />
+    <Compile Include="Models\PaymentError.cs" />
+    <Compile Include="Models\PaymentErrorResponse.cs" />
+    <Compile Include="Models\Users\ContactTypeResponseModel.cs" />
+    <Compile Include="Models\Users\UserDataResponseModel.cs" />
+    <Compile Include="Models\Users\ValidateCustomerResponseModel.cs" />
+    <Compile Include="Models\Payment\PaymentInteractionDetails.cs" />
+    <Compile Include="Models\Payment\PaymentOrderDetails.cs" />
+    <Compile Include="Models\Payment\PaymentOrdersResponseModel.cs" />
+    <Compile Include="Models\Payment\PaymentSessionDetails.cs" />
+    <Compile Include="Models\Payment\PaymentSessionModel.cs" />
+    <Compile Include="Models\Payment\PaymentSessionRequestModel.cs" />
+    <Compile Include="Models\Payment\PaymentSessionResponseModel.cs" />
+    <Compile Include="Models\Assets\AssetDetailsResponseModel.cs" />
+    <Compile Include="Models\Assets\AssetResponseModel.cs" />
+    <Compile Include="Models\Assets\VehicleResponseModel.cs" />
+    <Compile Include="Models\PointOfInterest\PoiServiceResponseModel.cs" />
+    <Compile Include="Models\PointOfInterest\PoiCategoryResponseModel.cs" />
+    <Compile Include="Models\PointOfInterest\PoiResponseModel.cs" />
+    <Compile Include="Models\MasterTables\MasterTableRootResponseModel.cs" />
+    <Compile Include="Models\MasterTables\MasterTableResponseModel.cs" />
+    <Compile Include="Models\FAQ\FAQCategoryResponseModel.cs" />
+    <Compile Include="Models\FAQ\FAQResponseModel.cs" />
+    <Compile Include="Models\Case\CaseResponseModel.cs" />
+    <Compile Include="Models\Case\CreateCaseResponseModel.cs" />
+    <Compile Include="Models\Accounts\AccountInfoResponseModel.cs" />
+    <Compile Include="Models\Accounts\AccountInfoRootResponseModel.cs" />
+    <Compile Include="Models\Accounts\AccountTopUpRangeResponseModel.cs" />
+    <Compile Include="Models\Accounts\AccountResponseModel.cs" />
+    <Compile Include="Models\Accounts\AccountTopupResponseModel.cs" />
+    <Compile Include="Models\Accounts\AccountPageTransactionsResponseModel.cs" />
+    <Compile Include="Models\Accounts\AnonymousPaymentResponseModel.cs" />
+    <Compile Include="Models\Accounts\DashboardResponseModel.cs" />
+    <Compile Include="Models\Accounts\RetrieveFinancialDocumentsResponseModel.cs" />
+    <Compile Include="Models\Accounts\AccountTransactionsResponseModel.cs" />
+    <Compile Include="Models\Accounts\RegisterAccountTopupRequestModel.cs" />
+    <Compile Include="Models\Accounts\AnonymousTransactionResponseModel.cs" />
+    <Compile Include="Mappings\AccountProfile.cs" />
+    <Compile Include="Mappings\AssetProfile.cs" />
+    <Compile Include="Mappings\CaseProfile.cs" />
+    <Compile Include="Mappings\FAQProfile.cs" />
+    <Compile Include="Mappings\MasterTablesProfile.cs" />
+    <Compile Include="Mappings\PaymentProfile.cs" />
+    <Compile Include="Mappings\PointOfInterestProfile.cs" />
+    <Compile Include="Mappings\UserProfile.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
